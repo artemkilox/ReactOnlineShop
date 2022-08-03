@@ -4,33 +4,16 @@ import Basket from "./pages/Basket";
 import DevicePage from "./pages/DevicePage";
 import Auth from "./pages/Auth";
 import Shop from "./pages/Shop";
+import React from "react";
 
 export const authRoutes = [
-    {
-        path: ADMIN_ROUTE,
-        Component: Admin
-    },
-    {
-        path: BASKET_ROUTE,
-        Component: Basket
-    }
+    {id: 1, path: ADMIN_ROUTE, component: <Admin />},
+    {id: 2, path: BASKET_ROUTE, component: <Basket/>}
 ]
 
 export const publicRoutes = [
-    {
-        path: SHOP_ROUTE,
-        Component: Shop
-    },
-    {
-        path: LOGIN_ROUTE,
-        Component: Auth
-    },
-    {
-        path: REGISTRATION_ROUTE,
-        Component: Auth
-    },
-    {
-        path: DEVICE_ROUTE + "/:id",
-        Component: DevicePage
-    }
+    {id: 3, path: SHOP_ROUTE, component: <Shop />},
+    {id: 4, path: LOGIN_ROUTE, component: <Auth/>},
+    {id: 5, path: REGISTRATION_ROUTE, component: <Auth/>},
+    {id: 6, path: DEVICE_ROUTE + "/:id", component: <DevicePage/>}
 ]
