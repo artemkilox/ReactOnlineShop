@@ -7,12 +7,12 @@ import Shop from "./pages/Shop";
 import React from "react";
 
 export const authRoutes = [
-    {id: 1, path: ADMIN_ROUTE, component: <Admin />},
+    {id: 1, path: ADMIN_ROUTE, component: <Admin/>},
     {id: 2, path: BASKET_ROUTE, component: <Basket/>}
 ]
 
 export const publicRoutes = [
-    {id: 3, path: SHOP_ROUTE, component: <Shop />},
+    {id: 3, path: SHOP_ROUTE, component: <Shop/>},
     {id: 4, path: LOGIN_ROUTE, component: <Auth/>},
     {id: 5, path: REGISTRATION_ROUTE, component: <Auth/>},
     {id: 6, path: DEVICE_ROUTE + "/:id", component: <DevicePage/>}
